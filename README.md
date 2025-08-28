@@ -1,99 +1,135 @@
 # 🏥 Hospital Management System (HMS)
 
-The **Hospital Management System (HMS)** is a full-stack web application designed to streamline hospital operations such as managing patients, doctors, appointments, and records.  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![GitHub last commit](https://img.shields.io/github/last-commit/DhruvKhassa/full-stack-hms)
+![GitHub repo size](https://img.shields.io/github/repo-size/DhruvKhassa/full-stack-hms)
+![GitHub stars](https://img.shields.io/github/stars/DhruvKhassa/full-stack-hms?style=social)
 
-This project demonstrates an end-to-end solution using both **frontend & backend** technologies, enabling medical staff and admins to efficiently manage healthcare workflows.
+The **Hospital Management System (HMS)** is a **full-stack web application** designed to simplify and digitize hospital workflows.  
+It enables hospital administrators, doctors, and staff to efficiently manage patients, doctors, appointments, and medical records through a single unified platform.
 
 ---
 
 ## 🚀 Features
-- 👨‍⚕️ **Doctor Management** – Add, view, and manage doctor records.
-- 🧑‍🤝‍🧑 **Patient Management** – Register new patients, view records, and manage history.
-- 📅 **Appointments** – Schedule, update, and cancel medical appointments.
-- 📝 **Medical Records** – Maintain patient history and treatment records.
-- 🔐 **Authentication** – Secure login system for admin/staff access.
-- 📊 **Dashboard** – Centralized overview of key hospital activities.
-- 🌐 **Full-Stack Architecture** – Combines frontend (UI) and backend (logic/database).
+
+- 👨‍⚕️ **Doctor Management** – Add, update and manage doctor records.  
+- 🧑‍🤝‍🧑 **Patient Management** – Register new patients, maintain medical records.  
+- 📅 **Appointments** – Book, edit, and cancel patient-doctor appointments.  
+- 📝 **Medical Records** – Keep track of patient checkups, prescriptions, and reports.  
+- 🔐 **Authentication & Authorization** – Admin, doctor, and staff roles.  
+- 📊 **Dashboard** – Summarized reports for quick hospital insights.  
+- 🌐 **Full-Stack Architecture** – Seamless integration between frontend and backend services.  
 
 ---
 
 ## 🛠️ Tech Stack
-### Frontend:
-- **HTML5 / CSS3 / JavaScript**
-- **React.js / Bootstrap** (if applicable)
 
-### Backend:
-- **Node.js / Express.js** (if implemented)
-- **MongoDB / MySQL** (for database connectivity)
+### Frontend
+- **React.js / HTML / CSS / Bootstrap**
+- Interactive dashboard components
 
+### Backend
+- **Node.js / Express.js**
+- REST APIs for patients, doctors, and appointments
+
+### Database
+- **MongoDB** or **MySQL** (depending on implementation)
+
+### Other Tools
+- **JWT Authentication**
+- **dotenv** for environment variables
 
 ---
 
-## 📂 Project Structure (Example)
+## 📂 Project Structure
+
 ```
 full-stack-hms/
-├── backend/                 # Backend (API, DB models, authentication)
-├── frontend/                # Frontend (UI, components, services)
-├── package.json             # Dependencies
-├── README.md                # Documentation
-└── LICENSE                  # MIT License
+│
+├── backend/                # Server-side code (API + DB logic)
+│   ├── routes/             # API endpoints
+│   ├── models/             # Database schemas (patients/doctors)
+│   ├── controllers/        # Business logic
+│   ├── middleware/         # Auth, error handling
+│   └── app.js              # Express server setup
+│
+├── frontend/               # Client-side code
+│   ├── public/
+│   └── src/
+│       ├── components/     # Reusable UI components
+│       ├── pages/          # Views (Doctors, Patients, Appointments)
+│       └── App.js          # Main entry point
+│
+├── dashboard/              # (Optional Admin Dashboard)
+├── docs/                   # Documentation, ER diagrams, screenshots
+├── .gitignore              # Ignore node_modules, .env, build files
+├── LICENSE                 # MIT License
+├── README.md               # Documentation
+└── .env.example            # Example environment variables
 ```
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the repo:
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/DhruvKhassa/full-stack-hms.git
 cd full-stack-hms
 ```
 
-### 2️⃣ Install dependencies (both frontend & backend)
+### 2️⃣ Setup Backend
 ```bash
 cd backend
 npm install
-
-cd ../frontend
-npm install
 ```
-
-### 3️⃣ Configure Environment Variables
-Create a `.env` file in the backend folder with:
+Create `.env` file based on `.env.example`  
 ```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+JWT_SECRET=supersecretkey
 ```
-
-### 4️⃣ Run the Application
+Run backend:
 ```bash
-# In backend
-npm start
-
-# In frontend
 npm start
 ```
 
-The app should now be running at:
-👉 Frontend: `http://localhost:3000`  
-👉 Backend API: `http://localhost:5000`
+### 3️⃣ Setup Frontend
+```bash
+cd ../frontend
+npm install
+npm start
+```
+Frontend runs on 👉 `http://localhost:3000`  
+Backend runs on 👉 `http://localhost:5000`
 
 ---
 
-## 📸 Screenshots (Optional)
-_Add UI screenshots or demo GIF here for a professional look._
+## 📸 Screenshots
+
+📌 *(Add screenshots here for a better look – e.g., Dashboard, Doctors Page, Appointment Booking Form)*  
+
+| Dashboard | Manage Patients | Appointments |
+|-----------|-----------------|--------------|
+| ![Dashboard](docs/screenshots/dashboard.png) | ![Patients](docs/screenshots/patients.png) | ![Appointments](docs/screenshots/appointments.png) |
+
+---
+
+## 📊 ER Diagram (Optional)
+
+*(Place a DB relation diagram here in `docs/ER-diagram.png`)*
 
 ---
 
 ## 📜 License
-This project is licensed under the **MIT License**.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 ## 👨‍💻 Author
-- **Dhruv Khassa** – [GitHub Profile](https://github.com/DhruvKhassa)
+- **Dhruv Khassa**  
+  [GitHub](https://github.com/DhruvKhassa) · [LinkedIn](https://www.linkedin.com)
 
 ---
 
-✨ A digital solution to make hospital management more efficient and reliable.
+✨ A digital solution to make hospital workflows smarter and faster
