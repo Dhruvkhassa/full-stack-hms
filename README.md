@@ -26,7 +26,6 @@ This project demonstrates an end-to-end solution using both **frontend & backend
 - **Node.js / Express.js** (if implemented)
 - **MongoDB / MySQL** (for database connectivity)
 
-> _(Adjust the stack above depending on what your implementation actually uses — since repo is named `full-stack`, it likely involves Node/Express + MongoDB or MySQL.)_
 
 ---
 
