@@ -107,7 +107,7 @@ Backend runs on 👉 `http://localhost:5000`
 
 ## 📸 Screenshots
 
-📌 *(Add screenshots here for a better look – e.g., Dashboard, Doctors Page, Appointment Booking Form)*  
+
 
 | Dashboard | Manage Patients | Appointments |
 |-----------|-----------------|--------------|
@@ -115,7 +115,7 @@ Backend runs on 👉 `http://localhost:5000`
 
 ---
 
-## 📊 ER Diagram (Optional)
+## 📊 ER Diagram 
 
 ![ER Diagram](docs/ER-diagram.png)
 
