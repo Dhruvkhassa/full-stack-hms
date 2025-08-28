@@ -117,7 +117,7 @@ Backend runs on 👉 `http://localhost:5000`
 
 ## 📊 ER Diagram (Optional)
 
-*(Place a DB relation diagram here in `docs/ER-diagram.png`)*
+![ER Diagram](docs/ER-diagram.png)
 
 ---
 
